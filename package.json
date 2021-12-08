@@ -1,0 +1,26 @@
+{
+  "name": "team-employee-profiles",
+  "version": "1.0.0",
+  "description": "generates org chart of team members",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RPB543/team-employee-profiles.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RPB543/team-employee-profiles/issues"
+  },
+  "homepage": "https://github.com/RPB543/team-employee-profiles#readme",
+  "devDependencies": {
+    "inquirer": "^8.2.0",
+    "jest": "^27.4.3"
+  }
+}
