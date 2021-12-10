@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #dd78ae;
+    --secondary: black;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: 50px;
+}
+
+.navbar-brand {
+    font-size: 50px;
+}
+
+
+.card-header {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.card-body {
+    background-color: #fafafa;
+}
+.list-group-item {
+    background-color: white;
+    color: var(--primary);
+    width: auto;
+    font-size: 20px;
+}
+
+.card {
+    margin: 50px 50px;
+    display: flex;
+    flex: wrap;
+
+}

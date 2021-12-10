@@ -70,16 +70,10 @@ function addManager() {
                     return true;
                 }
             }
-        },
-        {
-            type: 'confirm',
-            name: 'confirmAddEmployee',
-            message: 'Would you like to add more team members?',
-            default: false
         }
     ])
         .then(managerInput => {
-            const { name, id, email, officeNumber, confirmAddEmployee } = managerInput;
+            const { name, id, email, officeNumber } = managerInput;
             const manager = new Manager(name, id, email, officeNumber);
             teamArr.push(manager)
             addEmployee();
