@@ -17,6 +17,7 @@ function buildTeam(teamArr) {
     if (!fs.existsSync(targetFolder)) {
         fs.mkdirSync(targetFolder)
     }
+    console.log("A HTML has been generated.")
     fs.writeFileSync(htmlFile, template(teamArr), "utf-8");
 }
 

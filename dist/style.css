@@ -38,7 +38,7 @@ body {
 }
 
 .card {
-    margin: 50px 50px;
+    margin: auto;
     display: flex;
     flex: wrap;
 

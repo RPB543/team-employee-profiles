@@ -1,10 +1,10 @@
 function getManagerCard(manager) {
     return `
-    <div class="col-12 mt-4">
-    <div class="card h-50 w-25 mx-auto">
+    <div class="col-3 mt-3">
+    <div class="card h-50 mt-2">
         <div class="card-header">
             <h3>${manager.getName()}</h3>
-            <h4 class="card-subtitle">Manager</h4><span class="material-icons">workspace_premium</span>
+            <h4 class="card-subtitle"><span class="material-icons">workspace_premium</span> Manager</h4>
         </div>
         <div class="card-body">
             <p class="id list-group-item">ID: ${manager.getId()}</p>
@@ -18,16 +18,16 @@ function getManagerCard(manager) {
 
 function getEngineerCard(engineer) {
     return `
-    <div class="col-4 mt-4">
-    <div class="card h-50">
+    <div class="col-3 mt-3">
+    <div class="card h-50 mt-2">
         <div class="card-header">
             <h3>${engineer.name}</h3>
-            <h4 class="card-subtitle">Engineer</h4><span class="material-icons">computer</span>
+            <h4 class="card-subtitle"><span class="material-icons">computer</span> Engineer</h4>
         </div>
         <div class="card-body">
             <p class="id list-group-item">ID: ${engineer.id}</p>
             <p class="email list-group-item">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-            <p class="github list-group-item">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
+            <p class="github list-group-item">Github: <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</a></p>
         </div>
     </div>
     </div>
@@ -36,11 +36,11 @@ function getEngineerCard(engineer) {
 
 function getInternCard(intern) {
     return `
-    <div class="col-4 mt-4">
-    <div class="card h-50">
+    <div class="col-3 mt-3">
+    <div class="card h-50 mt-2">
         <div class="card-header">
             <h3>${intern.name}</h3>
-            <h4 class="card-subtitle">Intern</h4><span class="material-icons">science</span>
+            <h4 class="card-subtitle"><span class="material-icons">science</span> Intern</h4>
         </div>
         <div class="card-body">
             <p class="id list-group-item">ID: ${intern.id}</p>
@@ -83,7 +83,7 @@ module.exports = (team) => {
         </nav>
     </header>
     <main>
-        <div class="card">
+        <div class="row">
             <div class="row justify-content-center" id="team-cards">
                 <!--Team Cards-->
                 ${generateTeam(team)}
