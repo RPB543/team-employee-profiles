@@ -1,7 +1,7 @@
 function getManagerCard(manager) {
     return `
     <div class="col-12 mt-4">
-    <div class="card h-50 mx-auto">
+    <div class="card h-50 w-25 mx-auto">
         <div class="card-header">
             <h3>${manager.getName()}</h3>
             <h4 class="card-subtitle">Manager</h4><span class="material-icons">workspace_premium</span>
@@ -18,7 +18,7 @@ function getManagerCard(manager) {
 
 function getEngineerCard(engineer) {
     return `
-    <div class="col-3 mt-4">
+    <div class="col-4 mt-4">
     <div class="card h-50">
         <div class="card-header">
             <h3>${engineer.name}</h3>
@@ -36,7 +36,7 @@ function getEngineerCard(engineer) {
 
 function getInternCard(intern) {
     return `
-    <div class="col-3 mt-4">
+    <div class="col-4 mt-4">
     <div class="card h-50">
         <div class="card-header">
             <h3>${intern.name}</h3>
