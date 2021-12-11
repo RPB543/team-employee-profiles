@@ -23,6 +23,7 @@ Run `npm run test` to run Jest for tests on constructors.
 :smiley: [Github](https://github.com/RPB543)
 
 ## HTML Screenshot
-![screenshot](screenshot.PNG)
+![screenshot](/screenshot.PNG)
 
 ## Demonstration Video 
+[Video](https://watch.screencastify.com/v/EvkidHizrKHQzfXFAFJ7)
